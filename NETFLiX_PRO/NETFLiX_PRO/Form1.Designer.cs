@@ -28,13 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button_bestseries = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(159, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(629, 426);
+            this.panel1.TabIndex = 0;
+            // 
+            // button_bestseries
+            // 
+            this.button_bestseries.Location = new System.Drawing.Point(13, 12);
+            this.button_bestseries.Name = "button_bestseries";
+            this.button_bestseries.Size = new System.Drawing.Size(140, 57);
+            this.button_bestseries.TabIndex = 1;
+            this.button_bestseries.Text = "Legnézettebb sorozatok";
+            this.button_bestseries.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_bestseries);
+            this.Controls.Add(this.panel1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button_bestseries;
     }
 }
 
