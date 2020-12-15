@@ -9,6 +9,6 @@ namespace NETFLiX_PRO.Entities
     class ChartData
     {
         public string Titles { get; set; }
-        public decimal IMDB_Rating { get; set; }
+        public decimal IMDB { get; set; }
     }
 }
