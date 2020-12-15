@@ -24,5 +24,13 @@ namespace NETFLiX_PRO
             panel1.Controls.Add(bestSeries);
             bestSeries.Dock = DockStyle.Fill;
         }
+
+        private void buttonIMDB_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl imdb = new UserControl2();
+            panel1.Controls.Add(imdb);
+            imdb.Dock = DockStyle.Fill;
+        }
     }
 }

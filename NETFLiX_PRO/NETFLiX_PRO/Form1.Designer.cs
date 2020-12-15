@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_bestseries = new System.Windows.Forms.Button();
+            this.buttonIMDB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -49,11 +50,22 @@
             this.button_bestseries.UseVisualStyleBackColor = true;
             this.button_bestseries.Click += new System.EventHandler(this.button_bestseries_Click);
             // 
+            // buttonIMDB
+            // 
+            this.buttonIMDB.Location = new System.Drawing.Point(13, 91);
+            this.buttonIMDB.Name = "buttonIMDB";
+            this.buttonIMDB.Size = new System.Drawing.Size(140, 57);
+            this.buttonIMDB.TabIndex = 2;
+            this.buttonIMDB.Text = "IMDB értékelések";
+            this.buttonIMDB.UseVisualStyleBackColor = true;
+            this.buttonIMDB.Click += new System.EventHandler(this.buttonIMDB_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonIMDB);
             this.Controls.Add(this.button_bestseries);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -66,6 +78,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button_bestseries;
+        private System.Windows.Forms.Button buttonIMDB;
     }
 }
 
