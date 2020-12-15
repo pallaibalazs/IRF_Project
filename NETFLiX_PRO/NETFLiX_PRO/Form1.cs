@@ -16,5 +16,13 @@ namespace NETFLiX_PRO
         {
             InitializeComponent();
         }
+
+        private void button_bestseries_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl bestSeries = new UserControl1();
+            panel1.Controls.Add(bestSeries);
+            bestSeries.Dock = DockStyle.Fill;
+        }
     }
 }

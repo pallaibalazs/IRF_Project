@@ -28,10 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.listbutton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonexport = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // listbutton
+            // 
+            this.listbutton.Location = new System.Drawing.Point(0, 17);
+            this.listbutton.Name = "listbutton";
+            this.listbutton.Size = new System.Drawing.Size(628, 23);
+            this.listbutton.TabIndex = 0;
+            this.listbutton.Text = "Sorozatok listázása";
+            this.listbutton.UseVisualStyleBackColor = true;
+            this.listbutton.Click += new System.EventHandler(this.listbutton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 46);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(466, 371);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // buttonexport
+            // 
+            this.buttonexport.Location = new System.Drawing.Point(487, 356);
+            this.buttonexport.Name = "buttonexport";
+            this.buttonexport.Size = new System.Drawing.Size(133, 61);
+            this.buttonexport.TabIndex = 2;
+            this.buttonexport.Text = "Exportálás (CSV)";
+            this.buttonexport.UseVisualStyleBackColor = true;
+            this.buttonexport.Click += new System.EventHandler(this.buttonexport_Click);
+            // 
+            // UserControl1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Controls.Add(this.buttonexport);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listbutton);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(628, 431);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button listbutton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonexport;
     }
 }

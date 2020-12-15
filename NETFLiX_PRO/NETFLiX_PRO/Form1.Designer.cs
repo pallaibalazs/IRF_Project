@@ -47,6 +47,7 @@
             this.button_bestseries.TabIndex = 1;
             this.button_bestseries.Text = "Legnézettebb sorozatok";
             this.button_bestseries.UseVisualStyleBackColor = true;
+            this.button_bestseries.Click += new System.EventHandler(this.button_bestseries_Click);
             // 
             // Form1
             // 
