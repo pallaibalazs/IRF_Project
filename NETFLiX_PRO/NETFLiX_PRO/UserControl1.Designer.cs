@@ -53,12 +53,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 46);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(466, 371);
+            this.dataGridView1.Size = new System.Drawing.Size(466, 348);
             this.dataGridView1.TabIndex = 1;
             // 
             // buttonexport
             // 
-            this.buttonexport.Location = new System.Drawing.Point(487, 356);
+            this.buttonexport.Location = new System.Drawing.Point(486, 333);
             this.buttonexport.Name = "buttonexport";
             this.buttonexport.Size = new System.Drawing.Size(133, 61);
             this.buttonexport.TabIndex = 2;
@@ -113,7 +113,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listbutton);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(628, 431);
+            this.Size = new System.Drawing.Size(628, 407);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

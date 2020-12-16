@@ -41,13 +41,13 @@
             this.chartIMDB.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartIMDB.Legends.Add(legend1);
-            this.chartIMDB.Location = new System.Drawing.Point(0, 101);
+            this.chartIMDB.Location = new System.Drawing.Point(0, 41);
             this.chartIMDB.Name = "chartIMDB";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartIMDB.Series.Add(series1);
-            this.chartIMDB.Size = new System.Drawing.Size(643, 300);
+            this.chartIMDB.Size = new System.Drawing.Size(643, 298);
             this.chartIMDB.TabIndex = 0;
             this.chartIMDB.Text = "chart1";
             // 
@@ -58,7 +58,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.chartIMDB);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(643, 440);
+            this.Size = new System.Drawing.Size(643, 384);
             ((System.ComponentModel.ISupportInitialize)(this.chartIMDB)).EndInit();
             this.ResumeLayout(false);
 

@@ -32,6 +32,7 @@
             this.button_bestseries = new System.Windows.Forms.Button();
             this.buttonIMDB = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.buttonstock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,18 +81,34 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // buttonstock
+            // 
+            this.buttonstock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonstock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonstock.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonstock.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonstock.Location = new System.Drawing.Point(13, 186);
+            this.buttonstock.Name = "buttonstock";
+            this.buttonstock.Size = new System.Drawing.Size(140, 65);
+            this.buttonstock.TabIndex = 4;
+            this.buttonstock.Text = "NETFLIX részvényadatok";
+            this.buttonstock.UseVisualStyleBackColor = false;
+            this.buttonstock.Click += new System.EventHandler(this.buttonstock_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonstock);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonIMDB);
             this.Controls.Add(this.button_bestseries);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +120,7 @@
         private System.Windows.Forms.Button button_bestseries;
         private System.Windows.Forms.Button buttonIMDB;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button buttonstock;
     }
 }
 
