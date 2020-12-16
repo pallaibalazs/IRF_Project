@@ -39,5 +39,13 @@ namespace NETFLiX_PRO
             panel1.Controls.Add(ujdata);
             ujdata.Dock = DockStyle.Fill;
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Biztosan ki akarsz lépni?", "Megerősítés", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

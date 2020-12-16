@@ -37,26 +37,24 @@ namespace NETFLiX_PRO
                 chart.Titles = titles[i].InnerText;
                 chart.IMDB = decimal.Parse(imdb[i].InnerText);
 
-                chartIMDB.DataSource = Charts;
-
-                var series = chartIMDB.Series[0];
-                series.ChartType = SeriesChartType.Column;
-                series.XValueMember = "Titles";
-                series.YValueMembers = "IMDB";
-                series.BorderWidth = 3;
-
-                var legend = chartIMDB.Legends[0];
-                legend.Enabled = false;
-
-                var chartArea = chartIMDB.ChartAreas[0];
-                chartArea.AxisX.MajorGrid.Enabled = false;
-                chartArea.AxisY.MajorGrid.Enabled = false;
-                chartArea.AxisY.IsStartedFromZero = false;
-
-
             }
-
             
+            chartIMDB.DataSource = Charts;
+
+            var series = chartIMDB.Series[0];
+            series.ChartType = SeriesChartType.Column;
+            series.XValueMember = "Titles";
+            series.YValueMembers = "IMDB";
+            series.BorderWidth = 3;
+
+            var legend = chartIMDB.Legends[0];
+            legend.Enabled = false;
+
+            var chartArea = chartIMDB.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.Enabled = false;
+            chartArea.AxisY.MajorGrid.Enabled = false;
+            chartArea.AxisY.IsStartedFromZero = false;
+
         }
     }
 }
