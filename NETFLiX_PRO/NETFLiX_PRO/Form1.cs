@@ -14,14 +14,16 @@ using System.Xml;
 
 namespace NETFLiX_PRO
 {
-    public partial class Form1 : Form
+    public partial class Form1 : AutoExit
     {
+        
+
         ChartData context = new NETFLiX_PRO.Entities.ChartData();
         BindingList<ChartData> Charts = new BindingList<ChartData>();
         public Form1()
         {
             InitializeComponent();
-                       
+                           
         }
 
         private void button_bestseries_Click(object sender, EventArgs e)
@@ -40,12 +42,29 @@ namespace NETFLiX_PRO
             ujdata.Dock = DockStyle.Fill;
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            SetTimeOut();
+        }
+
+
+
+
+
+        /*private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Biztosan ki akarsz lépni?", "Megerősítés", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 e.Cancel = true;
             }
-        }
+        }*/
+
+
+
+
+
+
+
+
     }
 }
