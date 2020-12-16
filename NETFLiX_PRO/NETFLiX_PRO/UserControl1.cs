@@ -17,10 +17,6 @@ namespace NETFLiX_PRO
         public UserControl1()
         {
             InitializeComponent();
-
-            
-
-
         }
 
         private void listbutton_Click(object sender, EventArgs e)

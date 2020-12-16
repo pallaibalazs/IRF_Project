@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml;
@@ -20,8 +21,7 @@ namespace NETFLiX_PRO
         public Form1()
         {
             InitializeComponent();
-
-            
+                       
         }
 
         private void button_bestseries_Click(object sender, EventArgs e)
@@ -31,6 +31,13 @@ namespace NETFLiX_PRO
             panel1.Controls.Add(bestSeries);
             bestSeries.Dock = DockStyle.Fill;
         }
-        
+
+        private void buttonIMDB_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl ujdata = new UserControl2();
+            panel1.Controls.Add(ujdata);
+            ujdata.Dock = DockStyle.Fill;
+        }
     }
 }
