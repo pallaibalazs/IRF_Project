@@ -28,16 +28,17 @@ namespace NETFLiX_PRO
             XmlNodeList titles = xDoc.GetElementsByTagName("Titles");
             XmlNodeList imdb = xDoc.GetElementsByTagName("IMDB_Rating");
 
-
             for (int i = 0; i < 50; i++)
-            {
-                var chart = new ChartData();
-                Charts.Add(chart);
+                {
+                    var chart = new ChartData();
+                    Charts.Add(chart);
 
-                chart.Titles = titles[i].InnerText;
-                chart.IMDB = decimal.Parse(imdb[i].InnerText);
+                    chart.Titles = titles[i].InnerText;
+                    chart.IMDB = decimal.Parse(imdb[i].InnerText);
 
-            }
+                }
+            
+            
             
             chartIMDB.DataSource = Charts;
 

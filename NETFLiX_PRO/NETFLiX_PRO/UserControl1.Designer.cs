@@ -40,12 +40,15 @@
             // 
             // listbutton
             // 
-            this.listbutton.Location = new System.Drawing.Point(0, 17);
+            this.listbutton.BackColor = System.Drawing.Color.Maroon;
+            this.listbutton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listbutton.ForeColor = System.Drawing.Color.White;
+            this.listbutton.Location = new System.Drawing.Point(15, 3);
             this.listbutton.Name = "listbutton";
-            this.listbutton.Size = new System.Drawing.Size(628, 23);
+            this.listbutton.Size = new System.Drawing.Size(613, 37);
             this.listbutton.TabIndex = 0;
             this.listbutton.Text = "Sorozatok listázása";
-            this.listbutton.UseVisualStyleBackColor = true;
+            this.listbutton.UseVisualStyleBackColor = false;
             this.listbutton.Click += new System.EventHandler(this.listbutton_Click);
             // 
             // dataGridView1
@@ -58,16 +61,21 @@
             // 
             // buttonexport
             // 
+            this.buttonexport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonexport.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonexport.ForeColor = System.Drawing.Color.White;
             this.buttonexport.Location = new System.Drawing.Point(486, 333);
             this.buttonexport.Name = "buttonexport";
             this.buttonexport.Size = new System.Drawing.Size(133, 61);
             this.buttonexport.TabIndex = 2;
             this.buttonexport.Text = "Exportálás (CSV)";
-            this.buttonexport.UseVisualStyleBackColor = true;
+            this.buttonexport.UseVisualStyleBackColor = false;
             this.buttonexport.Click += new System.EventHandler(this.buttonexport_Click);
             // 
             // comboBoxFilter
             // 
+            this.comboBoxFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBoxFilter.ForeColor = System.Drawing.Color.White;
             this.comboBoxFilter.FormattingEnabled = true;
             this.comboBoxFilter.Location = new System.Drawing.Point(488, 95);
             this.comboBoxFilter.Name = "comboBoxFilter";
@@ -76,6 +84,8 @@
             // 
             // textBoxSearch
             // 
+            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxSearch.ForeColor = System.Drawing.Color.White;
             this.textBoxSearch.Location = new System.Drawing.Point(487, 208);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(132, 20);
@@ -85,18 +95,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(484, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(139, 14);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mi szerint szeretne szűrni?";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(484, 192);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.Size = new System.Drawing.Size(81, 14);
             this.label2.TabIndex = 6;
             this.label2.Text = "Keresési érték:";
             // 
@@ -104,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSearch);
